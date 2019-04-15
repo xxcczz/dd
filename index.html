@@ -4,13 +4,13 @@ title: html
 ---		
 {% for post in paginator.posts %}		
 <!--遍历这一页的文章-->		
-	<h3><a href="/xx{{ post.url }}">{{ post.title }}</a></h3>	
+	<h3><a href="/dd{{ post.url }}">{{ post.title }}</a></h3>	
 	<!--链接--><!--标题-->	
 {% endfor %}		
 <div class="pagination">		
 	{% if paginator.previous_page %}	
 	<!--上一页的页数-->	
-		<a href="/xx{{ paginator.previous_page_path }}" class="previous">
+		<a href="/dd{{ paginator.previous_page_path }}" class="previous">
 		<!--上一页的路径-->
 		上一页
 		</a>
@@ -25,7 +25,7 @@ title: html
 
 	{% if paginator.next_page %}	
 	<!--下一页的页数-->	
-		<a href="/xx{{ paginator.next_page_path }}" class="next">下一页</a>
+		<a href="/dd{{ paginator.next_page_path }}" class="next">下一页</a>
 		<!--下一页的路径-->
 	{% else %}	
 		<span class="next ">下一页</span>
